@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace,sans-serif;
+}
+
+/* https://fontawesome.com/search?o=r&m=free&f=classic */
+
+.container{
+   width: 100%;
+   height: 100vh;
+   background-image: url(../img/login.jpg);
+   background-position: center;
+   background-size: cover;  
+   position: relative; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.form-box {
+    border-radius: 20px;
+    width: 700px;
+    max-width: auto;
+    scale: 0.9;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15); /* Adjust the alpha value (0 to 1) for transparency */
+    padding: 50px 60px 70px;
+    text-align: center;
+    border: 2px solid #ff0000; /* Red border */
+}
+
+
+.form-box h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #f5a607;
+    text-shadow: 0 0 5px #ff0000;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #ff0000;
+    position: absolute;
+    bottom: -12px;
+    left : 50%;
+    transform: translate(-50%);
+}
+
+.input-field{
+   background: #eaeaea;
+   margin: 17px 0;
+   border-radius: 25px;
+   display: flex;
+   align-items: center;
+   height: 40px;
+   width: 102%;
+} 
+
+.input-field-2{
+    background: #eaeaea;
+    margin: 17px 0;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 102%;
+ }
+
+input{
+    border: 0;
+    background: transparent;
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    outline: 0;
+    margin-left: 10px;
+}
+
+.input-field i{
+    margin-left: 7px;
+    color: #999;
+ }
+.form-box input[type="text"]:hover, 
+.form-box input[type="email"]:hover,
+.form-box input[type="password"]:hover{
+    background: #e4d9d9;
+    transition: .5s;
+    height: 40px;
+}
+
+form p{
+    font-size: 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+form p a {
+    text-decoration: none;
+    color: #f5a607;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+form p a:hover {
+    color: #ff0000 ;
+    text-shadow: 0 0 5px #000000;   /* Change to blue color */
+}
+
+.column {
+  display: inline-block;
+  width: 48%; /* Adjust the width as needed */
+  margin-right: 1%; /* Adjust the margin as needed */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.input-field-date {
+  width: 102%;
+  padding: 10px;
+  border: 2px solid #f5a607;
+  border-color: #f5a607;
+  font-size: 16px;
+  color: #000000;
+  background-color: #eaeaea34;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  text-align: center;
+  text-shadow: 0 0 5px #f0e7e7; 
+  margin: 15px 0;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.column label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5a607;
+    text-shadow: 0 0 5px #ff0000;
+} 
+
+.input-group label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f5a607;
+  text-shadow: 0 0 5px #ff0000;
+} 
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: rgba(255, 0, 0, 0.15);
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 40px;
+    border-radius: 20px;
+    border: 1;
+    border-color: #f5a607;
+    outline: 1;
+    cursor: pointer;
+    transition: background 1s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-field button:hover {
+    background: linear-gradient(45deg, rgba(89, 0, 255, 0.288), rgba(255, 0, 128, 0.288));
+    color: #000000;
+    transition: background 1s;
+}
+
+
+/* Reset default styles for the select element */
+.dropdown-field select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  
+  /* Style the container */
+  .dropdown-field {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the label */
+  .dropdown-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5a607;
+    text-shadow: 0 0 5px #ff0000;
+  }
+  
+  /* Style the select dropdown */
+  .dropdown-field select {
+    width: 102%;
+    padding: 10px;
+    border: 1;
+    border-color: #f5a607;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+    background-color: #eaeaea34;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    text-align: center;
+    text-shadow: 0 0 5px #f0e7e7;
+  }
+  
+  /* Style the select dropdown on hover and focus */
+  .dropdown-field select:hover{
+    border-color: #ff0000;
+  }
+  
+  /* Style the options within the dropdown */
+  .dropdown-field select option {
+    border-radius: 20px;
+  }
+  
+  /* Style the select arrow */
+  .dropdown-field select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Style the select arrow on hover and focus */
+  .dropdown-field select:hover::after,
+  .dropdown-field select:focus::after {
+    color: #db0c0c;
+  }
+  
+  .help-block {
+    color: #ff0000; /* Set the text color to red or your desired color */
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-top: 10px; /* Adjust the margin as needed */
+    margin-bottom: 1px;
+    display: block; /* Ensure the span is displayed as a block element */
+  }
